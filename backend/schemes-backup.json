@@ -1,0 +1,103 @@
+
+[
+  {
+    "id": 1,
+    "name": "AICTE Pragati Scholarship Scheme",
+    "category": "education",
+    "target": ["student"],
+    "benefit": "Scholarship support for eligible girl students pursuing technical education. Check the official guidelines for current benefits.",
+    "deadline": "Check the official portal for current deadlines.",
+    "documents": [
+      "Identity documents",
+      "Admission proof",
+      "Academic records",
+      "Required income documents",
+      "Bank account details"
+    ],
+    "howToApply": [
+      "Visit the National Scholarship Portal.",
+      "Find the AICTE Pragati scheme.",
+      "Read the current eligibility guidelines.",
+      "Prepare the required documents.",
+      "Apply through the official portal if eligible."
+    ],
+    "difficulty": "Check official guidelines",
+    "mode": "Online",
+    "commonIssues": [
+      "Missing documents",
+      "Incorrect admission details",
+      "Application verification pending"
+    ],
+    "tutorialLink": "",
+    "officialLink": "https://scholarships.gov.in/",
+    "eligibilityVerified": false,
+    "informationOnly": true
+  },
+  {
+    "id": 2,
+    "name": "PM-USP Central Sector Scholarship",
+    "category": "education",
+    "target": ["student"],
+    "benefit": "Financial assistance for students who meet the scheme's academic and other eligibility conditions. Check official guidelines for current benefits.",
+    "deadline": "Check the official portal for current deadlines.",
+    "documents": [
+      "Academic marksheets",
+      "Admission details",
+      "Identity documents",
+      "Bank account details",
+      "Other documents required by the scheme"
+    ],
+    "howToApply": [
+      "Visit the National Scholarship Portal.",
+      "Find the PM-USP Central Sector Scholarship.",
+      "Read the eligibility conditions.",
+      "Prepare the required documents.",
+      "Apply through the official portal if applications are open."
+    ],
+    "difficulty": "Check official guidelines",
+    "mode": "Online",
+    "commonIssues": [
+      "Academic conditions not met",
+      "Missing documents",
+      "Institute verification pending"
+    ],
+    "tutorialLink": "",
+    "officialLink": "https://scholarships.gov.in/",
+    "eligibilityVerified": false,
+    "informationOnly": true
+  },
+  {
+    "id": 3,
+    "name": "Mukhyamantri Kanya Sumangala Yojana",
+    "category": "women",
+    "target": ["homemaker", "other"],
+    "benefit": "Financial assistance for eligible families for a girl child's development and education. Verify the current benefit and conditions on the official portal.",
+    "deadline": "Check the official portal for current deadlines.",
+    "documents": [
+      "Uttar Pradesh residence proof",
+      "Income certificate",
+      "Required Aadhaar details",
+      "Girl child's birth registration details",
+      "Bank account details",
+      "Stage-specific supporting documents"
+    ],
+    "howToApply": [
+      "Visit the official Uttar Pradesh scheme portal.",
+      "Read the current eligibility conditions.",
+      "Register and select the relevant application stage.",
+      "Complete the form and upload required documents.",
+      "Submit the application and save the acknowledgement."
+    ],
+    "difficulty": "Check official guidelines",
+    "mode": "Online",
+    "commonIssues": [
+      "Residence or income details do not match",
+      "Birth registration details are incorrect",
+      "Required documents are missing"
+    ],
+    "tutorialLink": "",
+    "officialLink": "https://mksy.up.gov.in/",
+    "eligibilityVerified": false,
+    "informationOnly": true
+  }
+]

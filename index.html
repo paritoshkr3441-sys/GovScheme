@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find government schemes, scholarships, pensions, health, housing and livelihood support across India.">
+  <title>GovScheme | Government Schemes Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--NAVBAR -->
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">G</span>
+      <span>GovScheme</span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#eligibility">Find Schemes</a>
+      <a href="#schemes">Explore</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button id="darkModeToggle" class="icon-button" type="button"
+      aria-label="Switch to dark mode">🌙</button>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">GOVERNMENT SUPPORT, SIMPLIFIED</span>
+
+        <h1>
+          Find government support
+          <span>in one place.</span>
+        </h1>
+
+        <p>
+          Looking for a scholarship or government scheme? Use GovScheme
+  to explore options based on your state, age, occupation and
+  other details.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#eligibility">
+            Find My Schemes →
+          </a>
+          <a class="text-link" href="#schemes">Explore directory</a>
+        </div>
+
+        <p class="hero-note">
+          Free to explore. Always verify eligibility through the official
+          government department before applying.
+        </p>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-top">
+          <span>YOUR SUPPORT FINDER</span>
+          <span>INDIA</span>
+        </div>
+
+        <div class="panel-stat">
+          <div class="stat-icon">⌕</div>
+          <div>
+            <strong>Discover opportunities</strong>
+            <small>Search schemes by your situation</small>
+          </div>
+        </div>
+
+        <div class="panel-stat">
+          <div class="stat-icon mint">✓</div>
+          <div>
+            <strong>Explore multiple categories</strong>
+            <small>Education, agriculture, health and more</small>
+          </div>
+        </div>
+
+        <div class="panel-stat">
+          <div class="stat-icon gold">↗</div>
+          <div>
+            <strong>Reach official portals</strong>
+            <small>Check the latest application details</small>
+          </div>
+        </div>
+
+        <div class="panel-footer">
+          <span>One starting point</span>
+          <span class="mini-pill">States + Central</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK INFO -->
+    <section class="trust-strip">
+      <div>
+        <strong>28 States</strong>
+        <span>State-level discovery</span>
+      </div>
+      <div>
+        <strong>8 UTs</strong>
+        <span>Union Territory portals</span>
+      </div>
+      <div>
+        <strong>Multiple categories</strong>
+        <span>Support for different needs</span>
+      </div>
+    </section>
+
+    <!-- ELIGIBILITY CHECKER -->
+    <section id="eligibility" class="section section-tinted">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PERSONALISED SEARCH</span>
+          <h2>Find schemes for your situation</h2>
+        </div>
+
+        <p>
+          Enter your details to discover potentially relevant schemes.
+          Results are suggestions, not an official eligibility decision.
+        </p>
+      </div>
+
+      <form id="eligibilityForm" class="profile-form">
+        <div class="form-grid">
+
+          <label for="state">
+            State / Union Territory
+            <select id="state" name="state" required>
+              <option value="">Select your state / UT</option>
+              <option value="andhra pradesh">Andhra Pradesh</option>
+              <option value="arunachal pradesh">Arunachal Pradesh</option>
+              <option value="assam">Assam</option>
+              <option value="bihar">Bihar</option>
+              <option value="chhattisgarh">Chhattisgarh</option>
+              <option value="goa">Goa</option>
+              <option value="gujarat">Gujarat</option>
+              <option value="haryana">Haryana</option>
+              <option value="himachal pradesh">Himachal Pradesh</option>
+              <option value="jharkhand">Jharkhand</option>
+              <option value="karnataka">Karnataka</option>
+              <option value="kerala">Kerala</option>
+              <option value="madhya pradesh">Madhya Pradesh</option>
+              <option value="maharashtra">Maharashtra</option>
+              <option value="manipur">Manipur</option>
+              <option value="meghalaya">Meghalaya</option>
+              <option value="mizoram">Mizoram</option>
+              <option value="nagaland">Nagaland</option>
+              <option value="odisha">Odisha</option>
+              <option value="punjab">Punjab</option>
+              <option value="rajasthan">Rajasthan</option>
+              <option value="sikkim">Sikkim</option>
+              <option value="tamil nadu">Tamil Nadu</option>
+              <option value="telangana">Telangana</option>
+              <option value="tripura">Tripura</option>
+              <option value="uttar pradesh">Uttar Pradesh</option>
+              <option value="uttarakhand">Uttarakhand</option>
+              <option value="west bengal">West Bengal</option>
+              <option value="andaman and nicobar islands">Andaman and Nicobar Islands</option>
+              <option value="chandigarh">Chandigarh</option>
+              <option value="dadra and nagar haveli and daman and diu">
+                Dadra and Nagar Haveli and Daman and Diu
+              </option>
+              <option value="delhi">Delhi</option>
+              <option value="jammu and kashmir">Jammu and Kashmir</option>
+              <option value="ladakh">Ladakh</option>
+              <option value="lakshadweep">Lakshadweep</option>
+              <option value="puducherry">Puducherry</option>
+            </select>
+          </label>
+
+          <label for="age">
+            Your age
+            <input id="age" name="age" type="number"
+              min="1" max="120" placeholder="e.g. 19" required>
+          </label>
+
+          <label for="occupation">
+            Your occupation
+            <select id="occupation" name="occupation" required>
+              <option value="">Choose occupation</option>
+              <option value="student">Student</option>
+              <option value="farmer">Farmer / Agricultural Worker</option>
+              <option value="worker">Worker / Artisan</option>
+              <option value="business">Business Owner</option>
+              <option value="jobseeker">Job Seeker</option>
+              <option value="senior">Senior Citizen</option>
+              <option value="homemaker">Homemaker</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label for="gender">
+            Gender
+            <select id="gender" name="gender">
+              <option value="">Prefer not to say</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label for="schemeType">
+            Scheme category
+            <select id="schemeType" name="schemeType">
+              <option value="all">All categories</option>
+              <option value="education">Education & Scholarships</option>
+              <option value="agriculture">Agriculture & Farmers</option>
+              <option value="employment">Employment & Skills</option>
+              <option value="business">Business & Self-employment</option>
+              <option value="senior">Senior Citizens & Pensions</option>
+              <option value="women">Women & Girl Child</option>
+              <option value="disability">Disability Support</option>
+              <option value="health">Healthcare</option>
+              <option value="housing">Housing</option>
+              <option value="general">Other Welfare</option>
+            </select>
+          </label>
+
+          <label for="category">
+            Social category
+            <select id="category" name="category">
+              <option value="">Prefer not to say</option>
+              <option value="general">General</option>
+              <option value="sc">SC</option>
+              <option value="st">ST</option>
+              <option value="obc">OBC</option>
+              <option value="ews">EWS</option>
+              <option value="minority">Minority</option>
+            </select>
+          </label>
+
+          <label for="income">
+            Annual family income (₹)
+            <input id="income" name="income" type="number"
+              min="0" step="1000" placeholder="e.g. 250000" required>
+          </label>
+
+          <label class="check-label" for="disability">
+            <input id="disability" name="disability" type="checkbox">
+            <span>I need disability-related support</span>
+          </label>
+
+          <!-- Only shown when Student is selected -->
+          <div id="studentFields" class="student-fields">
+            <label for="academicLevel">
+              Current education level
+              <select id="academicLevel" name="academicLevel">
+                <option value="">Select education level</option>
+                <option value="school">School</option>
+                <option value="diploma">Diploma</option>
+                <option value="undergraduate">Undergraduate / BTech</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="research">Research</option>
+              </select>
+            </label>
+
+            <label for="marks">
+              Latest marks / percentage
+              <input id="marks" name="marks" type="number"
+                min="0" max="100" step="0.01" placeholder="Optional">
+            </label>
+          </div>
+
+        </div>
+
+        <div class="form-bottom">
+          <p>
+            Your profile is used for matching on this page. Confirm all
+            requirements on the official scheme website.
+          </p>
+
+          <button class="button primary" type="submit">
+            Find Matching Schemes →
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- SCHEME DIRECTORY -->
+    <section id="schemes" class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">SCHEME DIRECTORY</span>
+          <h2>Explore government schemes</h2>
+        </div>
+
+        <p>
+          Search the directory or filter by coverage and support category.
+        </p>
+      </div>
+
+      <div class="filter-bar">
+        <label class="search-box" for="schemeSearch">
+          <span>⌕</span>
+          <input id="schemeSearch" type="search"
+            placeholder="Search schemes, benefits, tags…">
+        </label>
+
+        <select id="stateFilter" aria-label="Filter scheme coverage">
+          <option value="all">All coverage</option>
+          <option value="central">Central schemes</option>
+          <option value="state">State schemes</option>
+        </select>
+
+        <select id="schemeFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="eligible">Possible matches</option>
+          <option value="education">Education</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="employment">Employment</option>
+          <option value="business">Business</option>
+          <option value="senior">Senior Citizens</option>
+          <option value="women">Women</option>
+          <option value="disability">Disability</option>
+          <option value="health">Healthcare</option>
+          <option value="housing">Housing</option>
+          <option value="general">Other Welfare</option>
+        </select>
+
+        <button id="resetFilters" class="button secondary" type="button">
+          Reset
+        </button>
+      </div>
+
+      <div class="results-meta">
+        <span id="schemeCount">Loading schemes…</span>
+        <span class="safe-note">
+          Eligibility is not officially certified by this website.
+        </span>
+      </div>
+
+      <div id="schemeContainer" class="scheme-grid" aria-live="polite"></div>
+
+      <div id="noResults" class="empty-state" style="display:none">
+        <div class="empty-icon">⌕</div>
+        <h3>No matching schemes found</h3>
+        <p>Try another keyword or clear the filters.</p>
+        <button id="emptyReset" class="button secondary" type="button">
+          Clear filters
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="about-card">
+        <span class="eyebrow">ABOUT GOVSCHEME</span>
+        <h2>Making government support easier to discover.</h2>
+
+        <p>
+          GovScheme is a student project designed to bring information about
+          scholarships, farmer support, employment, business, pensions,
+          healthcare, housing and other welfare opportunities into one place.
+        </p>
+
+        <p>
+          Instead of searching many websites from scratch, users can start
+          with their state and situation, explore possible options, and visit
+          the relevant official portal for details.
+        </p>
+
+        <p class="disclaimer">
+          <strong>Important:</strong> This is an independent discovery tool,
+          not a government website. Scheme information, eligibility,
+          benefits, deadlines and application links can change. Always verify
+          details with the responsible government department before applying.
+        </p>
+      </div>
+
+      <div class="about-side">
+        <div class="about-number">01</div>
+        <h3>Discover</h3>
+        <p>Find starting points by state, occupation and category.</p>
+
+        <div class="about-number">02</div>
+        <h3>Verify</h3>
+        <p>Confirm eligibility and current rules through official sources.</p>
+
+        <div class="about-number">03</div>
+        <h3>Apply safely</h3>
+        <p>Use official portals and avoid unofficial agents.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand" href="#home">
+      <span class="brand-mark">G</span>
+      <span>GovScheme</span>
+    </a>
+
+    <p>Student project · Not affiliated with a government department.</p>
+
+    <span>© <span id="year"></span> GovScheme</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
